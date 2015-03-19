@@ -6,11 +6,11 @@
 
 ### install-webserver.sh
 
-安装配置 Nginx + PHP-FPM + MySQL
+安装配置 nginx php-fpm mysql。
 
 ### reload-webserver.sh
 
-重启 Nginx + PHP-FPM + MySQL
+重启 nginx php-fpm mysql。
 
 ### proxy.sh
 
