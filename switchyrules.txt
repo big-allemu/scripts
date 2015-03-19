@@ -1,0 +1,14 @@
+; Trident.io Rule List
+; URL: http://samabox.com/switchyrules.txt
+
+#BEGIN
+
+[Wildcard]
+*://*.google.com/*
+*://*.gstatic.com/*
+*://*.gmail.com/*
+
+[RegExp]
+youtube
+
+#END
