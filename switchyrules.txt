@@ -1,5 +1,5 @@
 ; Trident.io Rule List
-; URL: http://samabox.com/switchyrules.txt
+; URL: https://raw.githubusercontent.com/tridentdotio/scripts/master/switchyrules.txt
 
 #BEGIN
 
