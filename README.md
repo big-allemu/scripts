@@ -1,12 +1,16 @@
-# clone我
+# 常用脚本
 
 仅限在公司开发环境下常用的script。将其clone至用户主目录：
 
 `cd ~; git clone git@github.com:tridentdotio/scripts.git; chmod -R 777 scripts`
 
-### reload.sh
+### install-webserver.sh
 
-重启Nginx + PHP-FPM + MySQL
+安装配置 Nginx + PHP-FPM + MySQL
+
+### reload-webserver.sh
+
+重启 Nginx + PHP-FPM + MySQL
 
 ### proxy.sh
 
