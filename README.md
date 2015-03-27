@@ -4,6 +4,14 @@
 
 `cd ~; git clone git@github.com:tridentdotio/scripts.git; chmod -R 777 scripts`
 
+### .vimrc
+
+简单的vim配置文件，执行以下命令使其生效：
+
+```bash
+ln -s ~/scripts/.vimrc ~/.vimrc
+```
+
 ### reload.sh
 
 重启 nginx php-fpm mysql。
