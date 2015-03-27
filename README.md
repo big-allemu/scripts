@@ -4,11 +4,7 @@
 
 `cd ~; git clone git@github.com:tridentdotio/scripts.git; chmod -R 777 scripts`
 
-### install-webserver.sh
-
-安装配置 nginx php-fpm mysql。
-
-### reload-webserver.sh
+### reload.sh
 
 重启 nginx php-fpm mysql。
 
