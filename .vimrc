@@ -20,6 +20,5 @@ set softtabstop=4
 set showmatch " 高亮显示对应的括号
 
 set ruler " 右下角显示光标位置
-set number " 显示行号
 set showcmd
 
