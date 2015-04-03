@@ -8,6 +8,7 @@
 *://*.gstatic.com/*
 *://*.gmail.com/*
 *://*.ggpht.com/*
+*://*.twitter.com/*
 
 [RegExp]
 youtube
