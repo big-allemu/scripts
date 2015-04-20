@@ -18,6 +18,10 @@ ln -s ~/scripts/.vimrc ~/.vimrc
 
 ### proxy.sh
 
+```bash
+sudo sh -c "echo '208.113.171.195 candler.dreamhost.com' >> /etc/hosts"
+```
+
 用SSH账号登录远程VPS服务器建立端口转发隧道，搭配Chrome的SwitchSharp代理切换插件。
 
 ### switchyrules.txt
