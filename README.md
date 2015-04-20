@@ -38,7 +38,7 @@ ssh tridentio@candler.dreamhost.com
 ~/scripts/proxy.sh
 ```
 
-如果没有提示错误信息，则已建立到服务器的SOCKET代理端口：7171
+如果没有提示错误信息，则已建立到服务器的SOCKS5代理端口：7171
 
 ### switchyrules.txt
 
