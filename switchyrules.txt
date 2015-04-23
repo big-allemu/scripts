@@ -12,5 +12,6 @@
 
 [RegExp]
 youtube
+cloudflare
 
 #END
