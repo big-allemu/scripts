@@ -9,6 +9,7 @@
 *://*.gmail.com/*
 *://*.ggpht.com/*
 *://*.twitter.com/*
+*://*.googleapis.com/*
 
 [RegExp]
 youtube
