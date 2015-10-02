@@ -11,7 +11,7 @@ set nowb
 set noswapfile
 
 " 缩进设置
-set smartindent " 设置智能缩进
+" set smartindent " 设置智能缩进
 set expandtab " 使用空格代替tab
 set tabstop=4 " 空格数量是4 
 set shiftwidth=4 " 自动缩进的宽度

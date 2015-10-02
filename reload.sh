@@ -21,4 +21,16 @@ sudo launchctl load -wF ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
 
 echo "nginx restarted"
 
+## memcached
+
+sudo launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist
+sudo launchctl load ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist
+
+echo "memcached restarted"
+
+## dnsmasq
+
+sudo launchctl stop homebrew.mxcl.dnsmasq
+sudo launchctl start homebrew.mxcl.dnsmasq
+
 exit 0
