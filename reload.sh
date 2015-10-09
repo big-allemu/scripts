@@ -1,36 +1,39 @@
 #!/bin/sh
 
-## php-fpm
+if [ $# -gt 0 ]; then
+    pname="$1"
+else
+    pname="all"
+fi
 
-sudo launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php*.plist
-sudo launchctl load -wF ~/Library/LaunchAgents/homebrew.mxcl.php*.plist
+if [ $pname = "php-fpm" -o $pname = "all" ]; then
+    echo "Restarting php-fpm..."
+    sudo launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php*.plist
+    sudo launchctl load -wF ~/Library/LaunchAgents/homebrew.mxcl.php*.plist
+fi
 
-echo "php-fpm restarted"
+if [ $pname = "mysql" -o $pname = "all" ]; then
+    echo "Restarting mysql..."
+    sudo launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+    sudo launchctl load -wF ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+fi
 
-##  mysql
+if [ $pname = "nginx" -o $pname = "all" ]; then
+    echo "Restarting nginx..."
+    sudo launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
+    sudo launchctl load -wF ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
+fi
 
-sudo launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
-sudo launchctl load -wF ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+if [ $pname = "memcached" -o $pname = "all" ]; then
+    echo "Restarting memcached..."
+    sudo launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist
+    sudo launchctl load ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist
+fi
 
-echo "mysql restarted"
-
-## nginx
-
-sudo launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
-sudo launchctl load -wF ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
-
-echo "nginx restarted"
-
-## memcached
-
-sudo launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist
-sudo launchctl load ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist
-
-echo "memcached restarted"
-
-## dnsmasq
-
-sudo launchctl stop homebrew.mxcl.dnsmasq
-sudo launchctl start homebrew.mxcl.dnsmasq
+if [ $pname = "dnsmasq" -o $pname = "all" ]; then
+    echo "Restarting dnsmasq..."
+    sudo launchctl stop homebrew.mxcl.dnsmasq
+    sudo launchctl start homebrew.mxcl.dnsmasq
+fi
 
 exit 0
