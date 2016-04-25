@@ -10,6 +10,9 @@
 *://*.ggpht.com/*
 *://*.twitter.com/*
 *://*.googleapis.com/*
+*://*.googleusercontent.com/*
+*://*.cloudfront.net/*
+*://*.tridentcdn.com/*
 
 [RegExp]
 youtube
